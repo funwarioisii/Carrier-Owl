@@ -3,9 +3,13 @@ subject: 'cat:cs.*'
 
 # 検索キーワード
 keywords:
-        kaggle: 3
-        resnet: 3
+        kaggle: 1
+        resnet: 1
         anomaly detection: 1
+        recommend: 1
+        GPT-3: 1
+        transformer: 1
+        micro kernel: 1
 
 # 通知の閾値
 score_threshold: 0
