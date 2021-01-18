@@ -155,6 +155,11 @@ def get_config() -> dict:
     return config
 
 
+def build_abs_query(keywords: list) -> str:
+    prefixed_queries = map(lambda keyword: 'abs:'+keyword, keywords)
+    abs_query = ' OR '.join(prefixed_queries)  # abs:resnet OR abs:kaggle
+    return abs_query
+
 def main():
     # debug用
     parser = argparse.ArgumentParser()
@@ -172,7 +177,8 @@ def main():
     # datetime format YYYYMMDDHHMMSS
     arxiv_query = f'({subject}) AND ' \
                   f'submittedDate:' \
-                  f'[{day_before_yesterday_str}000000 TO {day_before_yesterday_str}235959]'
+                  f'[{day_before_yesterday_str}000000 TO {day_before_yesterday_str}235959]' \
+                  f' AND ({abs_query})'
     articles = arxiv.query(query=arxiv_query,
                            max_results=1000,
                            sort_by='submittedDate',

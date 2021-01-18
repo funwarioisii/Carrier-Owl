@@ -11,7 +11,13 @@ keywords:
         transformer: 1
         attention: 1
         micro kernel: 1
+        micro VM: 1
         recipe: 1
+        NoSQL: 1
+        relational model: 1
+        image captioning: 2
+        video captioning: 2
+
 
 # 通知の閾値
 score_threshold: 0
