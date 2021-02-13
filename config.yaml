@@ -5,6 +5,8 @@ subject: 'cat:cs.*'
 keywords:
         recommendation: 1
         ViT: 2
+        vital: -2
+        vitamin: -2
         micro kernel: 1
         micro VM: 1
         recipes: 1
