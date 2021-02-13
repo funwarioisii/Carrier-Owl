@@ -4,7 +4,7 @@ subject: 'cat:cs.*'
 # 検索キーワード
 keywords:
         recommendation: 1
-        ViT: 2
+        Vi: 2
         vital: -2
         vitamin: -2
         micro kernel: 1
@@ -16,7 +16,6 @@ keywords:
         video captioning: 3
         personalize: 2
         navigation: 2
-
 
 # 通知の閾値
 score_threshold: 2
